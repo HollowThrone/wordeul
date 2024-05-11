@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/wordeul.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/formulaire.css">
+    <link rel="stylesheet" href="style/structureWeb.css">
+    <script src="js/wordeul.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/formulaire.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <aside id="ad">
+                <div class="adText">Envie d'un café ?</div>
+                <div class="adText2">      Testez cafeIN, meilleur qu'un café</div>
+        </aside>
+        <div class="boxInt">
+            <div id="intPrePartie">
+                <div id="titreFormulaire">Wordeul iter 2</div>
+                <div class="sousTitres">But du jeu</div>
+                <div class="textForm">
+                    <div>Déterminer un mot de six lettres</div>
+                    <div><p>Le joueur donne un mot et confirme avec Enter. Si le mot se trouve 
+                        au dictionnaire, l'ordinnateur accepte le mot et
+                        indique quelles lettres sont correctes
+                    </p></div>
+                    <ul>
+                        <li>celles correctement placées sont en vert;</li>
+                        <li>celles présentes mais mal placées sont en jaune;</li>
+                        <li>les autres sont absentes.</li>
+                    </ul>
+                </div>
+                <form id="gameForm">
+                    <label for="nTentatives">Nombre de tentatives :</label>
+                    <input type="number" id="nTentatives" name="nTentatives" min="1" max="8" required><br>
+                    <label for="motCible">Mot cible :</label>
+                    <div class="inputContainer">
+                        <input type="password" id="motCible" name="motCible" minlength="6" maxlength="6" required>
+                        <button type="button" id="randomBtn">Choisir un mot aléatoire</button>
+                    </div><br>
+                    <button type="submit" id="btnGo">Go</button>
+                </form>
+            </div>
+        </div>
+        <div class="boxGame">
+           <section id="game"></section>
+           
+        </div>
+    <div id="keyboardContainer">
+        <div id="keyboard"></div>
+    </div>
+    </div>
+    
+    
+    <div class="modal">
+        <div class="modal-dialog">
+            <div id="result">Vous avez gagné</div>
+            <div id="libelle">Vous avez trouvé le mot</div>
+            <div id="btn"><button type="submit" id="closeBtn">Fermer</button></div>
+        </div>
+    </div>
+    
+</body>
+</html>

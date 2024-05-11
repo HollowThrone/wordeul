@@ -1,0 +1,104 @@
+:root {
+    --primary-color: rgb(36, 133, 133);
+    --secondary-color: rgb(184, 165, 129);
+}
+
+#intPrePartie {
+        position: relative;
+        display: flex;
+        height: 70%;
+        width: 100%;
+        visibility: visible;
+        align-content: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--primary-color);
+}
+
+.inputContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+
+}
+
+#nTentatives {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 0.75em;
+    text-align: start;
+    background-color: wheat;
+}
+
+#motCible {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 0.75em;
+    justify-content: space-around;
+    background-color: wheat;
+}
+
+#btnGo {
+    display: flex;
+    height: 40px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.25em;
+    justify-content: space-around;
+    background-color: wheat;
+}
+
+#randomBtn {
+    height: 34px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.75em;
+    background-color: wheat;
+}
+
+#titreFormulaire {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.sousTitres {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#btnGo:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+#randomBtn:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#nTentatives:hover {
+    background-color: var(--secondary-color);
+}
+
+#motCible:hover {
+    background-color: var(--secondary-color);
+}
+
+.textForm {
+    padding-left: 5px;
+}

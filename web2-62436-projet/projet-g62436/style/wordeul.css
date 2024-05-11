@@ -1,0 +1,141 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    height: 100%;
+
+}
+
+#game {
+    margin-top: 300px;
+    position: relative;
+    display: flex;
+    border: 5px solid var(--primary-color);
+    visibility: hidden;
+    align-content: stretch;
+    flex-direction: column;
+    user-select: none;
+    flex-wrap: wrap;
+    gap: 4px;
+    
+}
+
+
+.row {
+    display: flex;  
+    justify-content: space-between;
+    gap: 2px;
+    
+}
+
+.tile {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    flex-grow: 10;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+}
+
+.tile.correct {
+    background-color: green;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.tile.present {
+    background-color: yellow;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+#keyboard {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.keyboard-key {
+    height: 50px;
+    width: 60px;
+    gap: 4px;
+    border-radius: 4px;
+    background-color: wheat;
+}
+
+.keyboard-key:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.keyboard-key.enter {
+    width: auto;
+}
+
+.keyboard-key.backspace {
+    width: auto;
+}
+
+.keyboard-key.correct {
+    background-color: green;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.keyboard-key.present {
+    background-color: yellow;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+#keyboardContainer {
+    margin: auto;
+    margin-top: 0;
+    grid-area: main;
+    grid-row: 2 / 3;
+}
+
+
+
+#game.notFound {
+    animation: horizontal-shaking 0.5s;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+    }
